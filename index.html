@@ -21,9 +21,8 @@
     <!-- fixed-top pour fixer la nav en haut de page  -->
     <!-- navbdar-expand-lg pour la faire apparaître sur un écran large -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      
-        <div class="container-fluid">
-            <!-- collapse effondrement (masquer afficher le bouton) /// aria-controls accessibilité aria-expanded="false" on démarre avec le menu qui n'est pas étendu on démarre à false -->
+      <div class="container-fluid">
+        <!-- collapse effondrement (masquer afficher le bouton) /// aria-controls accessibilité aria-expanded="false" on démarre avec le menu qui n'est pas étendu on démarre à false -->
         <button
           class="navbar-toggler ms-auto"
           type="button"
@@ -33,11 +32,11 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <!-- navbar-toggler-icon un svg qui fait le bouton (toggler = bascule) -->
+          <!-- navbar-toggler-icon un svg qui fait le bouton (toggler = bascule) -->
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- collapse navbar-collapse pour la faire apparaître ou non //  attention c'est le même id que dans data-target -->
-        
+
         <div class="collapse navbar-collapse" id="ma-nav">
           <!-- ul>li*5>a -->
           <!-- navbar-nav pour la ul /// nav-item pour les li /// nav-link pour les a  -->
@@ -65,45 +64,209 @@
     </nav>
 
     <!-- en-tête -->
-    <header id="accueil" class="bg-dark text-white">
-      <img src="img/man.svg" alt="Erwan NEDELEC - Développeur Colombbus" />
+    <header id="accueil" class="bg-dark text-white ">
+      <img src="img/man.svg" class="col-2 mx-auto d-block" alt= "Erwan NEDELEC - Développeur Colombbus" />
       <h1>Bienvenue sur mon portfolio</h1>
       <p>Je suis développeur web à Colombbus</p>
     </header>
-    <!-- fin en-tête -->
+        <!-- fin en-tête  -->
 
     <!-- section 1 portfolio -->
-    <section id="portfolio">
+    <section id="portfolio" class="container">
       <h2>Mon portfolio</h2>
       <!-- react twitch  -->
-      <img src="img/ReactTwitch.png" alt="Erwan NEDELEC React Twitch" />
+      <div class="card">
+        <img
+          src="img/ReactTwitch.png"
+          class="card-img-top"
+          alt="Erwan NEDELEC React Twitch"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Cloner Twitch avec React</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- animation  -->
-      <img src="img/animation.jpg" alt="Erwan NEDELEC animation" />
+      <div class="card">
+        <img
+          src="img/animation.jpg"
+          class="card-img-top"
+          alt="Erwan NEDELEC animation"
+        />
+        <div class="card-body">
+          <h5 class="card-title">UX Design</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- app meteo  -->
-      <img src="img/MeteoApp.png" alt="Erwan NEDELEC MeteoApp" />
+      <div class="card">
+        <img
+          src="img/MeteoApp.png"
+          class="card-img-top"
+          alt="Erwan NEDELEC meteoApp"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Application Météo</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- site menu  -->
-      <img src="img/SiteMenu.png" alt="Erwan NEDELEC design responsive" />
+      <div class="card">
+        <img
+          src="img/SiteMenu.png"
+          class="card-img-top"
+          alt="Erwan NEDELEC design responsive"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Design Responsive</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- site pour particuliers  -->
-      <img
-        src="img/SiteResPic.jpg"
-        alt="Erwan NEDELEC sites pour particuliers"
-      />
+      <div class="card">
+        <img
+          src="img/SiteResPic.jpg"
+          class="card-img-top"
+          alt="Erwan NEDELEC sites pour particuliers"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Sites pour particuliers</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- react visualisation de données  -->
-      <img src="img/Visu.jpg" alt="Erwan NEDELEC visualisation de données" />
+      <div class="card">
+        <img
+          src="img/Visu.jpg"
+          class="card-img-top"
+          alt="Erwan NEDELEC visualisation de données"
+        />
+        <div class="card-body">
+          <h5 class="card-title">visualisation de données</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- JS  -->
-      <img src="img/js.jpg" alt="Erwan NEDELEC javascript" />
+      <div class="card">
+        <img
+          src="img/js.jpg"
+          class="card-img-top"
+          alt="Erwan NEDELEC javascript"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Java Script</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- grid  -->
-      <img src="img/grid.jpg" alt="Erwan NEDELEC grid" />
+      <div class="card">
+        <img src="img/grid.jpg" class="card-img-top" alt="Erwan NEDELEC grid" />
+        <div class="card-body">
+          <h5 class="card-title">Grille CSS</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
 
       <!-- bulma  -->
-      <img src="img/bulma.jpg" alt="Erwan NEDELEC bulma" />
+      <div class="card">
+        <img
+          src="img/bulma.jpg"
+          class="card-img-top"
+          alt="Erwan NEDELEC bulma"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Framwork Bulm</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-default border-dark">
+            Code source
+          </button>
+          <button type="button" class="btn btn-default border-dark">
+            Voir le projet
+          </button>
+        </div>
+      </div>
     </section>
     <!-- fin section portfolio -->
 

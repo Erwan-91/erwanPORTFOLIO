@@ -1,1 +1,6 @@
 /* Mes styles pour le portfolio */
+.img-header{
+    width:200px;
+    height:200px;
+    margin: 0 auto;
+}
