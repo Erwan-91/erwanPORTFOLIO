@@ -1,13 +1,141 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Erwan Portfolio</title>
+
+    <!-- BS5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Mon fichier style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- navigation principale -->
+    <!-- fixed-top pour fixer la nav en haut de page  -->
+    <!-- navbdar-expand-lg pour la faire apparaître sur un écran large -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      
+        <div class="container-fluid">
+            <!-- collapse effondrement (masquer afficher le bouton) /// aria-controls accessibilité aria-expanded="false" on démarre avec le menu qui n'est pas étendu on démarre à false -->
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#ma-nav"
+          aria-controls="ma-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <!-- navbar-toggler-icon un svg qui fait le bouton (toggler = bascule) -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- collapse navbar-collapse pour la faire apparaître ou non //  attention c'est le même id que dans data-target -->
+        
+        <div class="collapse navbar-collapse" id="ma-nav">
+          <!-- ul>li*5>a -->
+          <!-- navbar-nav pour la ul /// nav-item pour les li /// nav-link pour les a  -->
+          <ul class="navbar-nav">
+            <li class="nav-tiem">
+              <a href="#accueil" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-tiem">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-tiem">
+              <a href="#a-propos" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-tiem">
+              <a href="#mes-services" class="nav-link">Mes services</a>
+            </li>
+            <li class="nav-tiem">
+              <a href="#contact" class="nav-link">Contactez-moi</a>
+            </li>
+          </ul>
+        </div>
+        <!-- fin de div pour la ul  -->
+      </div>
+      <!-- fin container fluid  -->
+    </nav>
+
+    <!-- en-tête -->
+    <header id="accueil" class="bg-dark text-white">
+      <img src="img/man.svg" alt="Erwan NEDELEC - Développeur Colombbus" />
+      <h1>Bienvenue sur mon portfolio</h1>
+      <p>Je suis développeur web à Colombbus</p>
+    </header>
+    <!-- fin en-tête -->
+
+    <!-- section 1 portfolio -->
+    <section id="portfolio">
+      <h2>Mon portfolio</h2>
+      <!-- react twitch  -->
+      <img src="img/ReactTwitch.png" alt="Erwan NEDELEC React Twitch" />
+
+      <!-- animation  -->
+      <img src="img/animation.jpg" alt="Erwan NEDELEC animation" />
+
+      <!-- app meteo  -->
+      <img src="img/MeteoApp.png" alt="Erwan NEDELEC MeteoApp" />
+
+      <!-- site menu  -->
+      <img src="img/SiteMenu.png" alt="Erwan NEDELEC design responsive" />
+
+      <!-- site pour particuliers  -->
+      <img
+        src="img/SiteResPic.jpg"
+        alt="Erwan NEDELEC sites pour particuliers"
+      />
+
+      <!-- react visualisation de données  -->
+      <img src="img/Visu.jpg" alt="Erwan NEDELEC visualisation de données" />
+
+      <!-- JS  -->
+      <img src="img/js.jpg" alt="Erwan NEDELEC javascript" />
+
+      <!-- grid  -->
+      <img src="img/grid.jpg" alt="Erwan NEDELEC grid" />
+
+      <!-- bulma  -->
+      <img src="img/bulma.jpg" alt="Erwan NEDELEC bulma" />
+    </section>
+    <!-- fin section portfolio -->
+
+    <!-- section 2 à propos -->
+    <section id="apropos">
+      <h2>A propos</h2>
+    </section>
+    <!-- fin section à propos -->
+
+    <!-- section 3 mes services -->
+    <section id="mes-services">
+      <h2>Mes services</h2>
+    </section>
+    <!-- fin section mes services -->
+
+    <!-- section 4 contact -->
+    <section id="contact">
+      <h2>Contactez-moi</h2>
+    </section>
+    <!-- fin section contact -->
+
+    <!-- pied de page -->
+    <footer>
+      <p>Tous droits reservés Aiirone91</p>
+    </footer>
+    <!-- fin de pied page -->
+
+    <!-- JS et Popper de BS5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
